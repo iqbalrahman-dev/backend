@@ -19,7 +19,7 @@ db.on('error', (error)=> console.error(error));
 db.once('open', ()=> {
     console.log('Database Connected');
 // listen on port
-app.listen(PORT, () => console.log('Server Running at port ${PORT}'));
+app.listen(PORT, () => console.log("Server Running at port %d", PORT));
 });
 
 app.use(cors());
