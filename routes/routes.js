@@ -13,7 +13,11 @@ import * as fasilitas from "../controllers/C_fasilitas.js";
 import * as galeri from "../controllers/C_galeri.js";
 
 const router = express.Router();
- 
+
+router.get('/', function(){
+	return 'Berhasil';
+});
+
 router.get('/member/', member.getMember);
 router.get('/member/:id', member.getMemberById);
 router.post('/member/', member.saveMember);
