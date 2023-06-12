@@ -7,6 +7,7 @@ import Router from "./routes/routes.js";
 
 // init express
 const app = express();
+const PORT = process.env.PORT || 3000;
 
 mongoose.connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
@@ -24,4 +25,4 @@ app.use(express.json());
 app.use(Router);
  
 // listen on por
-app.listen(7500, () => console.log('Server Running at http://localhost:7500'));
+app.listen(PORT, () => console.log('Server Running at port ${PORT}'));
