@@ -8,7 +8,7 @@ import Router from "./routes/routes.js";
 // init express
 const app = express();
 
-mongoose.connect("mongodb+srv://process.env.USERDB:process.env.PASSDB@transprima.lohqzt6.mongodb.net/project1", {
+mongoose.connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedtopology: true
 });
