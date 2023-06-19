@@ -10,7 +10,31 @@ const Rental = mongoose.Schema({
         type: String,
         required: true
     },
-    harga:{
+    dalam_kota:{
+        type: String,
+        required: true
+    },
+    zona1:{
+        type: String,
+        required: true
+    },
+    zona2:{
+        type: String,
+        required: true
+    },
+    zona3:{
+        type: String,
+        required: true
+    },
+    zona4:{
+        type: String,
+        required: true
+    },
+    zona5:{
+        type: String,
+        required: true
+    },
+    zona6:{
         type: String,
         required: true
     },
