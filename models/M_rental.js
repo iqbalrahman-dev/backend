@@ -38,6 +38,10 @@ const Rental = mongoose.Schema({
         type: String,
         required: true
     },
+    stok:{
+        type: String,
+        required: true
+    },
     status:{
         type: Number,
         required: true
