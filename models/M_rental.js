@@ -39,7 +39,7 @@ const Rental = mongoose.Schema({
         required: true
     },
     stok:{
-        type: String,
+        type: Number,
         required: true
     },
     status:{
